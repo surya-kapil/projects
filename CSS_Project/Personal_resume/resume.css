@@ -1,0 +1,304 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+.main-content{
+    margin: 0;
+    background-color: #0a192f;
+    color: white;
+    min-height: 100vh;
+    text-align: left;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.intro{
+    width: auto;
+    margin: auto;
+   
+
+    padding-top: 10vh;
+}
+
+.name{
+    font-size: 2rem;
+}
+.beautiful{
+    font-size: 4rem;
+}
+.description{
+    font-size: 2rem;
+}
+
+.work-info{
+    display: flex;
+    flex-direction: column;
+
+    gap: 2vh;
+}
+
+.work-info a{
+    text-decoration: none;
+    color: #829467;
+}
+
+.battle{
+    display: flex;
+    align-items: center;
+    height: auto;
+
+    border: 2px solid white;
+    background-color: #0c2f3d;
+    border-radius: 10px;
+}
+.battle > div > img{
+    width: 10vw;
+    height: 10vh;
+    padding-left: 1vw;
+}
+
+.battle > .content{
+    padding-left: 2vw;
+    padding-bottom: 2vw;
+}
+
+.music{
+    display: flex;
+    align-items: center;
+    height: auto;
+
+    border: 2px solid white;
+    background-color: #0c2f3d;
+    border-radius: 10px;
+}
+
+.music > div > img{
+    width: 10vw;
+    height: 10vh;
+    padding-left: 1vw;
+}
+
+.music > .content{
+    padding-left: 2vw;
+    padding-bottom: 2vw;
+}
+
+.view{
+    width: 5vw;
+    margin: auto;
+    margin-top: 4vh;
+    height: 35px;
+    border-radius: 7px;
+    background-color: transparent;
+    color: #c5c5a5;
+    border-color: #c5c5a5;
+}
+
+.writing{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.first-card{
+    width: auto;
+    background-color: #0c2f3d;
+    padding: 2vw 2vw 2vw 2vw;
+}
+.first-card > img{
+    width: 30vw;
+    height: 20vh;
+}
+
+.second-card{
+    width: auto;
+    background-color: #0c2f3d;
+    padding: 2vw 2vw 2vw 2vw;
+}
+.second-card > img{
+    width: 30vw;
+    height: 20vh;
+}
+
+.writing-container{
+    text-align: center;
+}
+
+
+.contact-list{
+    list-style-type: none;
+    display: flex;
+    gap: 3vw;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+.touch-buttons{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: #c5c5a5;
+}
+
+.touch-buttons > .session{
+    width: 10vw;
+    height: 5vh;
+    font-size: 1.2rem;
+    background-color: transparent;
+    color: #c5c5a5;
+    border-color: #c5c5a5;
+    border-radius: 10px;
+}
+
+.all-container{
+    display: flex;
+    
+}
+
+.side-content{
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #0a192f;
+    border-right: 2px solid #37404f;
+    color: white;
+}
+.address{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: #0c2f3d;
+}
+.address > img{
+    border-radius: 50%;
+    width: 80%;
+    height: 25vh;
+    padding: 5px;
+}
+
+.profile-section > ul{
+    margin: 0;
+    list-style-type: none;
+    text-align: left;
+    
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    & li{
+        padding: 20px;
+        border-radius: 10px;
+    }
+    
+    & li:hover{
+        background-color: rgb(75, 117, 117);
+        
+    }
+}
+
+.icons{
+    display: flex;
+    flex-direction: column;
+
+    width: 20%;
+    gap: 10vh;
+}
+
+.icons > img{
+    padding: 10px;
+    border-radius: 10px;
+}
+.icons >img:hover{
+    background-color: aliceblue;
+}
+
+
+@media (max-width: 768px) {
+
+    .all-container {
+        flex-direction: column;
+    }
+
+    .side-content {
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px solid #37404f;
+    }
+
+    .icons {
+        flex-direction: row;
+        width: auto;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    .beautiful {
+        font-size: 2.5rem;
+    }
+
+    .description,
+    .name {
+        font-size: 1.25rem;
+    }
+
+    .battle,
+    .music {
+        flex-direction: column;
+    }
+
+    .battle > div > img,
+    .music > div > img {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        padding: 15px;
+    }
+
+    .writing {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .first-card > img,
+    .second-card > img {
+        width: 100%;
+        height: auto;
+    }
+
+    .view {
+        width: 150px;
+    }
+
+    .touch-buttons > .session {
+        width: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .icons {
+        width: auto;
+        align-items: center;
+    }
+
+    .icons > img {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+
+
