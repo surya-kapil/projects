@@ -1,0 +1,21 @@
+table{
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+
+td{ 
+    border: 2px solid black;
+    width: 50px;
+    height: 50px;
+}
+
+table tr:nth-child(odd) td:nth-child(odd),
+table tr:nth-child(even) td:nth-child(even){
+    background-color: rgb(115, 110, 110);
+}
+
+
+td{
+    text-align: center;
+    font-size: 2em;
+}
