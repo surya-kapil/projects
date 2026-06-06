@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Invitation</title>
+    <link rel="stylesheet" href="eventInvitation.css">
+</head>
+<body>
+
+    <div id="event-div">
+        <h1>Create an event Invite</h1>
+
+        <form action="" id="event-form">
+            <label for="event-name" class="labels">Event Name</label>
+            <input type="text" id="event-name" placeholder="Enter event name">
+
+
+            <label for="event-date" class="labels">Event Date</label>
+            <input type="date" id="event-date">
+          
+
+            <label for="start-time">Start Time</label>
+            <input type="time" id="start-time">
+         
+
+            <label for="end-time">End Time</label>
+            <input type="time" id="end-time">
+           
+
+            <label for="location">Location</label>            
+            <input type="text" id="location" placeholder="Patia, Bhubaneswar">
+
+            <div id="button-div">
+                <button id="eventBtn">Create Event</button>
+            </div>
+
+            
+        </form>
+
+        <dialog id="event-dialog">
+            <h1>YOU ARE INVITED</h1>
+            <h3>TO JOIN THE</h3>
+
+            <span id="name-span">Kapil's GANG</span>
+            <br>
+
+            <span id="date-span">31st December, 2026</span>
+            <br>
+
+            <p><span id="start-span">15:30</span> to <span id="end-span">18:30</span></p>
+
+            <p><span id="location-span">Patia, Bhubaneswar</span></p>
+            <br>
+            <p>Join us for an exciting meetup where JavaScript enthusiasts and experts from across the state will come together to discuss the latest trends and technologies in JS development. Network, learn,
+and collaborate in this community-driven event!</p>
+
+                <button id="dismiss">Dismiss</button>
+        </dialog>
+    </div>
+    
+<script src="eventInvitation.js"></script>
+</body>
+</html>
