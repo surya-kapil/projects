@@ -1,0 +1,47 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#all-content{
+    padding-top: 5vh;
+}
+
+#sticky-note{
+    height: 20vh;
+    width: 18vw;
+    background-color: transparent;
+    border: none;
+    resize: none;
+}
+
+#sticky{
+    background-color: #fefec0;
+    border: 2px solid lightgray;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#add-button{
+    background-color: #11ff00;
+    border: none;
+    width: 20px;
+    border-radius: 2px;
+}
+
+#add-button:hover{
+    transform: scale(1.2);
+}
+
+#new-notes{
+    width: 80vw;
+    display: flex;
+    gap: 10vw;
+    justify-content: space-evenly;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    padding-top: 50px;
+    
+}
