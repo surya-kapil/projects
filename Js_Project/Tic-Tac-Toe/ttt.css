@@ -1,0 +1,52 @@
+body{
+    background-image: url('images/flat-mountains.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+}
+
+td{
+    width: 12vw;
+    height: 15vh;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.headline{
+    display: flex;
+    justify-content: center;
+}
+
+.button-div{
+    display: flex;
+    justify-content: center;
+
+    & button{
+        width: 8vw;
+        height: 6vh;
+        border-radius: 5px;
+        background-color: rgb(88, 238, 88);
+        color: white;
+        font-size: 17px;
+    }
+}
+
+#winner-msg{
+    display: flex;
+    justify-content: center;
+}
+
+.winner{
+    background-color: lightgreen;
+}
+
