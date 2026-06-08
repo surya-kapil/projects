@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BattleShip</title>
+    <link rel="stylesheet" href="battle.css">
+</head>
+<body>
+    
+    <div id="main-content">
+
+        <div id="headline-div">
+            <h1>Battleship</h1>
+        </div>
+
+        <div>
+            <div id="rules-div">
+                <p>Games Rules</p>
+                <ol>
+                    <li>Click on cells to reveal image behind them.</li>
+                    <li>There are 5 ships hidden in game</li>
+                    <li>You win if you find 5 ships within 8 clicks, else you lose</li>
+                </ol>
+
+            </div>
+
+            <div id="game-div">
+                <table id="game-boxes">
+                    <tr>
+                        <td><img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/seamless-pattern-waves-various-shades-blue-vector-underwater-design-96891651_aSd5pmbaM.webp" alt="" class="hidden water"></td>
+                        <td><img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/seamless-pattern-waves-various-shades-blue-vector-underwater-design-96891651_aSd5pmbaM.webp" alt="" class="hidden water"></td>
+                        <td><img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/battleship-image_e6bWCZ1w4.png" alt="" class="hidden ship"></td>
+                        <td><img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/seamless-pattern-waves-various-shades-blue-vector-underwater-design-96891651_aSd5pmbaM.webp" alt="" class="hidden water"></td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/seamless-pattern-waves-various-shades-blue-vector-underwater-design-96891651_aSd5pmbaM.webp" alt="" class="hidden water"></td>
+                        <td><img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/seamless-pattern-waves-various-shades-blue-vector-underwater-design-96891651_aSd5pmbaM.webp" alt="" class="hidden water"></td>
+                        <td><img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/seamless-pattern-waves-various-shades-blue-vector-underwater-design-96891651_aSd5pmbaM.webp" alt="" class="hidden water"></td>
+                        <td><img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/battleship-image_e6bWCZ1w4.png" alt="" class="hidden ship"></td>
+                    </tr>
+
+
+                    <tr>
+                        <td><img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/seamless-pattern-waves-various-shades-blue-vector-underwater-design-96891651_aSd5pmbaM.webp" alt="" class="hidden water"></td>
+                        <td><img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/seamless-pattern-waves-various-shades-blue-vector-underwater-design-96891651_aSd5pmbaM.webp" alt="" class="hidden water"></td>
+                        <td><img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/battleship-image_e6bWCZ1w4.png" alt="" class="hidden ship"></td>
+                        <td><img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/battleship-image_e6bWCZ1w4.png" alt="" class="hidden ship"></td>
+                    </tr>
+
+
+                    <tr>
+                        <td><img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/battleship-image_e6bWCZ1w4.png" alt="" class="hidden ship"></td>
+                        <td><img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/seamless-pattern-waves-various-shades-blue-vector-underwater-design-96891651_aSd5pmbaM.webp" alt="" class="hidden water"></td>
+                        <td><img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/seamless-pattern-waves-various-shades-blue-vector-underwater-design-96891651_aSd5pmbaM.webp" alt="" class="hidden water"></td>
+                        <td><img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/seamless-pattern-waves-various-shades-blue-vector-underwater-design-96891651_aSd5pmbaM.webp" alt="" class="hidden water"></td>
+                    </tr>
+                </table>
+
+                <div id="button-div">
+                    <button id="reset-btn"> Reset </button>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+
+    <script src="battle.js"></script>
+</body>
+</html>
