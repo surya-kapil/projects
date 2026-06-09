@@ -3,7 +3,7 @@ let currentNumber = 0;
 let currentOperator = "#";
 
 function resetEverything(){
-    currentAnswer = currrentNumber = 0;
+    currentAnswer = currentNumber = 0;
     currentOperator = '#';
 
 }
@@ -20,10 +20,11 @@ function updateCurrentNumber(){
         
         if(isNaN(newNumber)){
             alert(`Please enter a valid number`);
-            return;
+            return false;
         }
 
         currentNumber = newNumber;
+        return true;
 }
 
 const numbers = document.querySelectorAll('.number');
@@ -48,7 +49,7 @@ const operators = document.querySelectorAll('.operator');
 operators.forEach((operator) => {
     operator.addEventListener('click', ()=> {
        
-        updateCurrentNumber();
+        if(!updateCurrentNumber()) return;
 
 
         currentOperator = operator.innerText;
@@ -69,7 +70,7 @@ const equals = document.getElementById('equals');
 equals.addEventListener('click', () => {
     if(currentOperator === '#') return;
 
-    updateCurrentNumber();
+    if(!updateCurrentNumber()) return;
 
     //console.log(`${currentAnswer} is answer and ${currentNumber} is number and ${currentOperator} is operator`);
 
