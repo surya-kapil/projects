@@ -39,6 +39,7 @@ button{
     height: 7vh;
     margin: 0.3vw;
     font-size: 3.5vh;
+    min-width: 100px;
 }
 
 button:hover{
