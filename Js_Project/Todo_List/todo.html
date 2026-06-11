@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    
+    <main>
+        <div class="head-container">
+            <h1>To-Do List</h1>
+            <input type="text" name="" id="search-bar" placeholder="Search tasks...">
+            
+        </div>
+
+        <div class="input-container">
+            <input type="text" placeholder="Add your to-do task..." id="task-description">
+            <input type="date" id="task-date">
+            <input type="time" id="task-time">
+            <button id="add-task">Add Task</button>
+        </div>
+
+        <div class="task-container">
+            <div id="due-task-container" class="task-headlines">
+                <h2>Due Tasks</h2>
+                <div id="due-tasks" class="tasks">
+                </div>
+            </div>
+
+            <div id="today-task-container" class="task-headlines">
+                <h2>Today's Tasks</h2>
+                <div id="today-tasks" class="tasks">
+
+                </div>
+            </div>
+
+            <div id="upcoming-task-container" class="task-headlines">
+                <h2>Upcoming Tasks</h2>
+
+                <div id="upcoming-tasks" class="tasks">
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="todo.js"></script>
+</body>
+</html>

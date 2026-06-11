@@ -1,0 +1,128 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    width: 80%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2vh 2vw;
+    background-color: rgb(242, 242, 242);
+    
+}
+
+.head-container{
+    width: 95%;
+    border-radius: 8px;
+    
+    margin-top: 3vh;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: blue;
+
+
+    & input{
+        height: 35px;
+        
+        margin: 0 2vw;
+        width: 50%;
+        border-radius: 8px;
+        padding-left: 6px;
+        
+    }
+
+    & h1{
+        margin-left: 2vw;
+        color: white;
+    }
+}
+
+.input-container{
+    display: flex;
+    margin: 3vh 2vw;
+    width: 90%;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 8px;
+    background-color: white;
+
+    & input{
+        width: 25%;
+        
+    }
+    & button{
+        width: 12%;
+        background-color: rgb(58, 206, 58);
+        color: white;
+    
+        
+    }
+
+    & input, button{
+        height: 5vh;
+        border-radius: 5px;
+        font-size: 1.2em;
+    }
+    padding: 2vh 1vw;
+}
+
+.task-container{
+    width: 90%;
+    background-color: white;
+    padding: 2vh 2vw;
+    margin-bottom: 3vh;
+}
+
+.task-headlines{
+    font-size: 1.3em;
+}
+
+.task-headlines > h2{
+    color: blue;
+}
+
+
+.date{
+    font-size: 1.2em;
+    padding: 1vh 0;
+    font-weight: bold;
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+}
+
+.description{
+    font-size: 1.1em;
+}
+
+.buttons{
+    display: flex;
+    gap: 2vw;
+
+    & button{
+        font-size: 1em;
+    }
+
+    
+}
+
+.edit-btn{
+        background-color: orange;
+        border-radius: 5px;
+        padding: 0.5vh 0.5vw;
+    }
+.delete-btn{
+        background-color: red;
+        color: white;
+        border-radius: 5px;
+        padding: 0.5vh 0.5vw;
+}
